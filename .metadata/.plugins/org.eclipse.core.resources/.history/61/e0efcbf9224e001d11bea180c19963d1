@@ -1,0 +1,23 @@
+package com.product.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.product.servcie.ProductService;
+
+@RestController
+public class ProductController {
+	
+	@Autowired		
+	private ProductService productService;
+	
+	//create API
+	/*
+	 URL: localhost:8080/products
+	 Method:GET
+	 Required Field:None 
+	 */
+	@GetMapping("/products")
+	public List<Product> getProducts(){}
+	
+}

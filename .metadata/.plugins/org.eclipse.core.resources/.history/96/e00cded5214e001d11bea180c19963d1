@@ -1,0 +1,6 @@
+package com.product.servcie;
+
+@Service
+public class ProductService {
+
+}
